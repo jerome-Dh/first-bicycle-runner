@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+    <head dir="ltr">
+        <meta charset="utf-8"/>
+        <title>First Bicycle Runner</title>
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <div id="container">
+            
+            <h1 class="center">thE fBR Game</h1>
+            
+            <div class="content">
+
+                <div>
+                    
+                    <div id="fbr-name" class="item">
+
+                        <div>
+                            <span class="sound">
+                                <img src="images/0295-volume-high.png" alt="sound" width="16"/>
+                            </span>
+
+                            <span class="play">
+                                <img src="images/0285-play3.png" alt="play button" width="16"/>
+                            </span>
+
+                            <span class="stop">
+                                <img src="images/0287-stop2.png" alt="stop button" width="16"/>
+                            </span>
+                        </div>
+
+                        <div>First Bicycle Runner</div>
+
+                        <div>
+                            <span class="config">
+                                <img src="images/0149-cog.png" alt="volume" width="16"/>
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div id="fbr-extra-info" class="item">
+
+                        <div class="info-score">Score <span class="value">0</span></div>
+
+                        <div class="info-text"></div>
+
+                        <div class="info-speed">
+                            <div>
+                                <span class="speed">0</span> km/h<br/>
+                                Speed: x<span class="speed-up">1</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="fbr-loading" class="item">
+                        <strong class="fbr-text-loading">Loading <span>0%</span></strong>
+                        <progress class="center" max="100" value="0"></progress>
+                    </div>
+
+                    <div id="fbr-leved" class="item">
+                        <div class="fbr-btn-leved">Leved</div>
+                    </div>
+
+                    <div id="fbr-play" class="item">
+                        <div class="fbr-btn-play play">
+                            <img src="images/0285-play3.png" alt="volume" width="22"/>
+                            Play
+                        </div>
+                    </div>
+
+                    <div id="fbr-settings" class="item">
+                        <div class="fbr-btn-settings">
+                            Settings
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <canvas id="canvas" width="640" height="480">
+                <p>Browser not support Canvas, please get lasted version of your browser</p>
+            </canvas>
+            
+        </div>
+
+        <!-- Scripts js -->
+        <script src="js/Constants.js"></script>
+        <script src="js/Preferences.js"></script>
+        <script src="js/Loader.js"></script>
+        <script src="js/Play.js"></script>
+        <script src="js/Game.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
