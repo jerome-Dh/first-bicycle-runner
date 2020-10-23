@@ -1,0 +1,179 @@
+/** 
+ * Main stylesheet
+ */
+
+ body {
+     background-image: linear-gradient(to bottom left, #f1f1f1, #f3f3f3, #f5f5f5, #f7f7f7);
+ }
+ #container {
+    position: relative;
+ }
+ .content {
+    position: absolute;
+    width: 100%;
+    user-select: none;
+ }
+
+ #canvas, .content > div {
+     width: 640px;
+     height: 480px;
+     margin: auto;
+     border-radius: 10px;
+}
+
+#canvas {
+    border: 1px solid #aaa;
+    margin: auto;
+    display: block;
+    background-image: url('../images/35.jpg');
+    background-position: center;
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    background-size: contain;
+    background-clip: border-box;
+    background-origin: border-box;
+}
+
+.center {
+    text-align: center;
+}
+
+/* The header and extra info */
+#fbr-name, #fbr-extra-info {
+
+    /** Flex content */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+}
+
+#fbr-name > div, #fbr-extra-info > div {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 33%;
+}
+
+#fbr-name > div:nth-child(2), #fbr-extra-info > div:nth-child(2) {
+    text-align: center;
+}
+
+#fbr-name > div:last-child {
+    text-align: right;
+}
+
+#fbr-name .sound, #fbr-name .play, #fbr-name .stop, #fbr-name .config {
+    cursor: pointer;
+}
+
+#fbr-name {
+    display: flex;
+    margin: 0 0 95px;
+    background-image: linear-gradient(to left, #1d5cbd, #aaa, #1d5cbd);
+    opacity: .5;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    width: auto;
+    padding: 10px;
+}
+
+#fbr-name .stop {
+    display: none;
+}
+
+#fbr-extra-info {
+    position: relative;
+    margin-top: -90px;
+}
+
+#fbr-extra-info .info-score {
+    padding: 10px;
+    font-size: 22px;
+    opacity: .4;
+}
+
+#fbr-extra-info .info-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    opacity: .8;
+}
+
+#fbr-extra-info .info-speed > div:last-child {
+    float: right;
+    padding: 10px;
+    margin-right: 5px;
+    width: 100px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    background-image: linear-gradient(to left, #444, #666);
+    color: #ff0;
+    border: burlywood 1px double;
+    border-radius: 6px;
+    opacity: .5;
+}
+
+/* The content  */
+.content [class ^= 'fbr-btn-'],
+.content [class ^= 'fbr-text-'] {
+    font-size: 18px;
+    text-align: center;
+}
+.content [class ^= 'fbr-btn-'] {
+    cursor: pointer;
+    margin: 10px auto 0;
+    padding: 10px;
+    width: 130px;
+    border-radius: 10px;
+    font-weight: bold;
+    opacity: .8;
+ }
+ .content [class ^= 'fbr-btn-'] img {
+     position: absolute;
+     margin-left: -22px;
+ }
+ .fbr-text-loading {
+     color: #eee;
+     display: block;
+ }
+ 
+.fbr-btn-leved {
+    border: 1px solid #eea;
+    background-image: linear-gradient(to bottom, #575, #9b9);
+    color: #ee7;
+ }
+ .fbr-btn-leved:hover {
+    background-image: linear-gradient(to bottom, #9b9, #575);
+ }
+ .fbr-btn-play {
+    border: 1px solid #aea;
+    background-image: linear-gradient(to bottom, rgb(19, 61, 19), rgb(93, 233, 93));
+    color: #ffe;
+ }
+ .fbr-btn-play:hover {
+    background-image: linear-gradient(to bottom, rgb(93, 233, 93), rgb(19, 61, 19));
+ }
+.fbr-btn-settings {
+    border: 1px solid rgb(128, 115, 59);
+    background-image: linear-gradient(to bottom, #773, #322);
+    color: rgb(248, 248, 248);
+ }
+ .fbr-btn-settings:hover {
+    background-image: linear-gradient(to bottom, #322, #772);
+ }
+
+ #fbr-loading progress {
+     margin: 10px auto;
+     display: block;
+     width: 300px;
+     border-radius: 6px;
+     height: 20px;
+ }
+
+ .content .item {
+    display: none;
+ }
