@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/jerome-Dh/first-bicycle-runner/master/images/fbr.png" width="300" alt="Icone"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/jerome-Dh/first-bicycle-runner/master/images/fbr.png" width="400" alt="Icone"></p>
 
 # First Bicycle Runner
 
