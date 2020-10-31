@@ -8,8 +8,8 @@ First Bicycle Runner is a bicycle racing game made with HTML5 and JavaScript.
 
 ## How to play
 
-Le projet a un fichier `` ʻindex.html``` dans le répertoire principal qui est utilisé pour démarrer le jeu.
-En double-cliquant sur ce fichier, le jeu devrait démarrer dans le navigateur Web.
+The project has an `` ʻindex.html``` file in the main directory which is used to start the game.
+By double-clicking on this file, the game should start in the web browser.
 
 ## Contributing
 
